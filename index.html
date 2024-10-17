@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#editor {
+    width: 600px;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-height: 200px;
+    box-shadow: 0 2px 4px black; 
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: black;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    background-image: linear-gradient(to bottom, red, red);
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:focus {
+    box-shadow: 0 0 0 2px white; 
+}
+h1{
+    color: black;
+}
+    </style>
+    <h1>DOM TASK</h1>
+    <textarea name="" id="editor"></textarea>
+    <div class="button-container">
+        <button id="boldBtn"><i class="fas fa-bold"></i> Bold</button>
+        <button id="italicBtn"><i class="fas fa-italic"></i> Italic</button>
+        <button id="underlineBtn"><i class="fas fa-underline"></i> Underline</button>
+        <button id="leftAlignBtn"><i class="fas fa-align-left"></i> Left Align</button>
+        <button id="centerAlignBtn"><i class="fas fa-align-center"></i> Center Align</button>
+        <button id="rightAlignBtn"><i class="fas fa-align-right"></i> Right Align</button>
+        <button id="uppercaseBtn"><i class="fas fa-text-height"></i> Uppercase</button>
+        <button id="lowercaseBtn"><i class="fas fa-text-height"></i> Lowercase</button>
+        <button id="capitalizeBtn"><i class="fas fa-text-height"></i> Capitalize</button>
+        <button id="clearBtn"><i class="fas fa-eraser" ></i> Clear Text</button>
+        <button id="textColorBtn"><i class="fas fa-paint-brush"></i> Text Color</button>
+        <button id="bgColorBtn"><i class="fas fa-fill-drip"></i> Background Color</button>
+        <button id="fontSizeBtn"><i class="fas fa-font"></i> Font Size</button>
+        <button id="fontStyleBtn"><i class="fas fa-font"></i> Font Style</button>
+        <button id="printBtn"><i class="fas fa-print"></i> Print</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
